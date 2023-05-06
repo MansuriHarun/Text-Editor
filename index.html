@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0ea0e772cc.js" crossorigin="anonymous"></script>
+    <title>M.H TextEditor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/high-black.png">
+        <button id="save-button" type="submit">Save</button>
+    </div>
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-js"></i> JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i> Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+       <marquee>"Please make sure to save your code before refreshing the page to avoid losing any unsaved work."
+       </marquee>
+    <script>
+        console.log("Welcome to M.H TextEditor");
+        let button = document.getElementById("save-button");
+        button.addEventListener("click", function() {
+        button.classList.toggle("clicked");
+        });
+        function run(){
+            let htmlCode = document.getElementById('html-code');
+            let cssCode = document.getElementById('css-code');
+            let jsCode = document.getElementById('js-code');
+            let output = document.getElementById('output');
+ 
+            output.contentDocument.body.innerHTML = htmlCode.value + "<style>" + cssCode.value + "</style>";
+            output.contentWindow.eval(jsCode.value);
+        }
+    var htmlCode = document.getElementById("html-code");
+    var cssCode = document.getElementById("css-code");
+    var jsCode = document.getElementById("js-code");
+    var saveButton = document.getElementById("save-button");
+    var outputFrame = document.getElementById("output");
+    saveButton.addEventListener("click", function(){
+        localStorage.setItem("htmlCode", htmlCode.value);
+        localStorage.setItem("cssCode", cssCode.value);
+        localStorage.setItem("jsCode", jsCode.value);
+    });
+    if(localStorage.getItem("htmlCode")) {
+        htmlCode.value = localStorage.getItem("htmlCode");
+        run();
+    }
+    if(localStorage.getItem("cssCode")) {
+        cssCode.value = localStorage.getItem("cssCode");
+        run();
+    }
+    if(localStorage.getItem("jsCode")) {
+        jsCode.value = localStorage.getItem("jsCode");
+        run();
+    }
+    </script>
+</body>
+</html>
