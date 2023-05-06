@@ -24,7 +24,7 @@ To install the Text Editor, follow these steps:
 
 2. Open the index.html file in your web browser.
 
-# - Warning
+# Warning
 excessive use of this text editor may result in an acute case of keyboard cramps and severe caffeine addiction.
 
 # Contributing
