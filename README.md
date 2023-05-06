@@ -24,9 +24,6 @@ To install the Text Editor, follow these steps:
 
 2. Open the index.html file in your web browser.
 
-# Warning
-excessive use of this text editor may result in an acute case of keyboard cramps and severe caffeine addiction.
-
 # Contributing
 Contributions to the Text Editor are welcome. If you would like to contribute to the development of the editor, please follow these steps:
 
@@ -35,6 +32,9 @@ Contributions to the Text Editor are welcome. If you would like to contribute to
 3. Make your changes and commit them.
 4. Push your changes to your forked repository.
 5. Create a pull request.
+
+# Warning
+Excessive use of this text editor may result in an acute case of keyboard cramps and severe caffeine addiction.
 
 # License
 The Text Editor is open source and released under the [MIT License](https://opensource.org/licenses/MIT).
