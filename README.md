@@ -24,6 +24,9 @@ To install the Text Editor, follow these steps:
 
 2. Open the index.html file in your web browser.
 
+# <div style="color:red;">Warning</div>
+excessive use of this text editor may result in an acute case of keyboard cramps and severe caffeine addiction.
+
 # Contributing
 Contributions to the Text Editor are welcome. If you would like to contribute to the development of the editor, please follow these steps:
 
