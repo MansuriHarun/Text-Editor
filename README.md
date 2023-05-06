@@ -19,6 +19,7 @@ A live demo of the Text Editor can be accessed at https://mhtexteditor.netlify.a
 To install the Text Editor, follow these steps:
 
 1. Clone the repository to your local machine.
+
 `git clone https://github.com/MansuriHarun/Text-Editor.git`
 
 2. Open the index.html file in your web browser.
